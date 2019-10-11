@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.axon.ame.multitasking">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VersionesRecientes.JobScheduler"></activity>
+        <activity android:name=".VersionesRecientes.JobSchedulerAct"></activity>
         <activity android:name=".VersionesRecientes.WorkerMarshmallow" />
         <activity android:name=".SlotMachine" />
         <activity android:name=".TimerTask.AsyncTaskPer" />
@@ -22,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".VersionesRecientes.JobSchedulerTask"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VersionesRecientes.JobScheduler">
+    tools:context=".VersionesRecientes.JobSchedulerAct">
 
     <Button
         android:id="@+id/btJSIniciar"
@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:onClick="scheduleJob"
         android:text="Iniciar Job"
         app:layout_constraintBottom_toTopOf="@+id/btJSTerminar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +28,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:onClick="cancelJob"
         android:text="Terminar Job"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

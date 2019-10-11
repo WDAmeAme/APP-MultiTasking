@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.axon.ame.multitasking.TimerTask.AsyncTaskPer;
 import com.axon.ame.multitasking.TimerTask.RunUiThread;
 import com.axon.ame.multitasking.TimerTask.Timer_Post_Handler;
+import com.axon.ame.multitasking.VersionesRecientes.JobSchedulerAct;
 import com.axon.ame.multitasking.VersionesRecientes.WorkerMarshmallow;
 
 public class Principal extends AppCompatActivity implements View.OnClickListener {
@@ -18,6 +19,7 @@ public class Principal extends AppCompatActivity implements View.OnClickListener
     private Button btPrinTimAsync;
     private Button btPrinSMAsync;
     private Button btPrinWorker;
+    private Button btPrinJob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +30,13 @@ public class Principal extends AppCompatActivity implements View.OnClickListener
         btPrinTimAsync = findViewById(R.id.btPrinTimAsync);
         btPrinSMAsync = findViewById(R.id.btPrinSMAsync);
         btPrinWorker = findViewById(R.id.btPrinWorker);
+        btPrinJob = findViewById(R.id.btPrinJob);
         btnRunUi.setOnClickListener(this);
         btPrinTimPosHan.setOnClickListener(this);
         btPrinTimAsync.setOnClickListener(this);
         btPrinSMAsync.setOnClickListener(this);
         btPrinWorker.setOnClickListener(this);
+        btPrinJob.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +61,10 @@ public class Principal extends AppCompatActivity implements View.OnClickListener
             case R.id.btPrinWorker:
                 Intent irRunWorker = new Intent(Principal.this, WorkerMarshmallow.class);
                 startActivity(irRunWorker);
+                break;
+            case R.id.btPrinJob:
+                Intent irRunJob = new Intent(Principal.this, JobSchedulerAct.class);
+                startActivity(irRunJob);
                 break;
         }
     }
