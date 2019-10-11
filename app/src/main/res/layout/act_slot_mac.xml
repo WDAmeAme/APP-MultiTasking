@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".SlotMachine">
+
+    <TextView
+        android:id="@+id/dificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slot Machine by Ame"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Prueba tu suerte!"
+        android:textColor="#005544"
+        android:textSize="30sp" />
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/iv11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm1" />
+
+        <ImageView
+            android:id="@+id/iv12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm2" />
+
+        <ImageView
+            android:id="@+id/iv13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm3" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/iv21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm4" />
+
+        <ImageView
+            android:id="@+id/iv22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm5" />
+
+        <ImageView
+            android:id="@+id/iv23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm6" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/iv31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm7" />
+
+        <ImageView
+            android:id="@+id/iv32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm8" />
+
+        <ImageView
+            android:id="@+id/iv33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sm9" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jugar" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jugar" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jugar" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fácil" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Difícil" />
+    </TableRow>
+</TableLayout>
